@@ -1,10 +1,9 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
   * main - print type sizes
   *
   * Return: prints the size of various types for the specific machine (Success)
   */
-
 int main(void)
 {
 	char c;
@@ -12,6 +11,7 @@ int main(void)
 	long int li;
 	long long int lli;
 	float f;
+
 	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
 	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(i));
 	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(li));
