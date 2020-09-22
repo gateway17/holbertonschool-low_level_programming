@@ -13,11 +13,11 @@ int main(void)
 	while (ab <= xz)
 	{
 		putchar(ab);
-		if(ab == xz)
+		if (ab == xz)
 		{
 		putchar('\n');
 		}
-	ab=ab + 1;
+	ab = ab + 1;
 	}
 	return (0);
 }
