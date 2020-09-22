@@ -10,9 +10,14 @@ int main(void)
 
 	ab = 'a';
 	xz = 'z';
-	while (ab <= xz; ab++)
+	while (ab <= xz)
 	{
 		putchar(ab);
+		if(ab == xz)
+		{
+		putchar('\n');
+		}
+	ab=ab + 1;
 	}
 	return (0);
 }
