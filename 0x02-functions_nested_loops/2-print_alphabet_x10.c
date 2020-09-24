@@ -11,7 +11,7 @@ void print_alphabet_x10(void)
 
 	char car = 'a';
 
-	for (time = 0; car <= 'z' && time <= 10; car++)
+	for (time = 0; car <= 'z' && time < 10; car++)
 	{
 	_putchar(car);
 		if (car == 'z')
