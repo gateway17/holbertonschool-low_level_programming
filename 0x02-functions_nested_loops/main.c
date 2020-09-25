@@ -2,6 +2,6 @@
 
 int main(void)
 {
-	_isalpha('a');
+	print_sign(96);
 return (0);
 }
