@@ -6,21 +6,11 @@
  *Return: "1" if match, else "0".
  */
 int _isupper(int c)
-{
-	char tc;
 
-	tc = 'A';
-	while (tc >= 'A' && tc <= 'Z')
-	{
-	if (tc == c)
-	{
+{
+	if (c >= 'A' && c <= 'Z')
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
-	tc++;
-	}
-return (0);
 }
+
