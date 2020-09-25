@@ -1,6 +1,7 @@
 #include"holberton.h"
 
-void main(void)
+int main(void)
 {
-	_isalpha('d');
+	_isalpha('a');
+return (0);
 }

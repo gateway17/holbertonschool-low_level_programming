@@ -1,14 +1,18 @@
 #include"holberton.h"
 /**
- *_islower - find lowcase.
- *print "1" if your character match with lowcase alphabet.
- *@c: character that you need to know if is lowcase or UPPER.
+ *_isalpha - find lowcase.
+ *print "1" if your character match with alphabet.
+ *@c: character that you enter.
  *Return: "1" if match, else "0".
  */
 int _isalpha(int c)
 {
 
-	while (c >= 'a' && c <= 'z' || c => 'A' && c <= 'Z')
+	if (c >= 'a' && c <= 'z')
+	{
+		return(1);
+	}
+	else if (c == 'A' && c <= 'Z')
 	{
 		return (1);
 	}
