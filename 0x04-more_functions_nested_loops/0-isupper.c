@@ -9,10 +9,18 @@ int _isupper(int c)
 {
 	char tc;
 
-	for (tc = 'A'; tc <= 'Z'; tc++)
+	tc = 'A';
+	while (tc >= 'A' && tc <= 'Z')
+	{
 	if (tc == c)
+	{
 		return (1);
+	}
 	else
+	{
 		return (0);
+	}
+	tc++;
+	}
 return (0);
 }
