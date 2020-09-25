@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	mul(4, 6);
+	print_numbers();
 
 return (0);
 }
