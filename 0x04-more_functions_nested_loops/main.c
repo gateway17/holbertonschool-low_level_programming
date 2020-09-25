@@ -2,6 +2,6 @@
 
 int main(void)
 {
-	_isupper('D');
+	_isdigit(6);
 return (0);
 }
