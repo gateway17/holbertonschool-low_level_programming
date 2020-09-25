@@ -11,13 +11,8 @@ int _isupper(int c)
 
 	for (tc = 'A'; tc <= 'Z'; tc++)
 	if (tc == c)
-	{
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
 return (0);
 }
-
