@@ -5,10 +5,11 @@
  * Return: 1 if digit, 0 otherwise
  */
 
-int _isdigit(int c)
+void main(void)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	else
-		return (0);
+	char a = 'b';
+	char b = 'e';
+	putchar (a + b);
+
+
 }

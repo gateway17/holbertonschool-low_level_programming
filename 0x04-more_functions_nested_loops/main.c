@@ -2,7 +2,9 @@
 
 int main(void)
 {
-	print_most_numbers();
+	print_line(9);
+	print_line(20);
+	print_line(9);
 
 return (0);
 }
