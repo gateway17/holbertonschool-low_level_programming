@@ -7,25 +7,26 @@
 int main(void)
 {
 	int num1;
+
 	for (num1 = 1; num1 <= 100; num1++)
 	{
 		if (num1 % 3 == 0 && num1 % 5 == 0)
 		{
-			printf ("FizzBuzz ");
+			printf("FizzBuzz ");
 			continue;
 		}
 		if (num1 % 3 == 0)
 		{
-			printf ("Fizz ");
+			printf("Fizz ");
 			continue;
 		}
-		else if ((num1 % 5) == 0)
+		else if (num1 % 5 == 0)
 		{
-			printf ("Buzz ");
+			printf("Buzz ");
 			continue;
 		}
-		printf ("%d ", num1);
+		printf("%d ", num1);
 	}
 	putchar ('\n');
-return(0);
+return (0);
 }
