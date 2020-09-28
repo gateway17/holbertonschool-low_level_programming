@@ -2,7 +2,7 @@
 
 /**
   * more_numbers- print numbers from 1 to 14, 10 times.
-  * @void: not parameter
+  * @void: without parameter
   * Return: without return
   **/
 void more_numbers(void)
