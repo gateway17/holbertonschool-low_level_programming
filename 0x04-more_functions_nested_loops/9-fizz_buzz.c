@@ -1,32 +1,39 @@
 #include <stdio.h>
 /**
- * main - Fizz Buzz.
- * print Fizz if the number is muntiple of 3, Buzz if multiple of 5.
+ * main - entry point void
+ *
  * Return: Always 0.
  */
 int main(void)
 {
-	int num1;
+	int n;
 
-	for (num1 = 0; num1 <= 100; num1++)
+	for (n = 1; n <= 100; n++)
 	{
-		if (num1 % 3 == 0 && num1 % 5 == 0)
+		if (n % 3 == 0 && n % 5 == 0)
 		{
-			printf("FizzBuzz ");
-			continue;
+			printf("FizzBuzz");
 		}
-		if (num1 % 3 == 0)
+		else if (n % 3 == 0)
 		{
-			printf("Fizz ");
-			continue;
+			printf("Fizz");
 		}
-		else if (num1 % 5 == 0)
+		else if (n % 5 == 0)
 		{
-			printf("Buzz ");
-			continue;
+			printf("Buzz");
 		}
-		printf("%d ", num1);
+		else
+		{
+			printf("%d", n);
+		}
+		if (n < 100)
+		{
+			putchar(32);
+		}
+		else if (n == 100)
+		{
+			putchar(10);
+		}
 	}
-	putchar ('\n');
-return (0);
+	return (0);
 }
