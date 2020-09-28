@@ -1,7 +1,6 @@
 #include "holberton.h"
-<<<<<<< HEAD
 /**
- *print_triangle - prints a triangle
+ *print_triangle - prints a triangle with "#"
  *@size: the size of the triangle
  */
 void print_triangle(int size)
@@ -27,3 +26,5 @@ void print_triangle(int size)
 	if (size <= 0)
 	{
 		_putchar('\n');
+	}
+}
