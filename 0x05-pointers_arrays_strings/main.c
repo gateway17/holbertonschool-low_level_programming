@@ -10,7 +10,8 @@ int main(void)
 {
     char *str;
 
-    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-    print_rev(str);
+    	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+	/*printf("La posicion del primer caracter es: %p\n", &str[]); */
+	print_rev(str);
     return (0);
 }

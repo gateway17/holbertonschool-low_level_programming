@@ -11,9 +11,12 @@ void print_rev(char *s)
 		counter++;
 
 	}
-	printf("%d", counter);
-
-
+	while (&s[counter] != &s[0])
+	{
+	_putchar(s[counter]);
+	counter--;
+	}
+	_putchar(s[0]);
 	_putchar('\n');
 
 }
