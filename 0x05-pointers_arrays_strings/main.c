@@ -7,10 +7,9 @@
  */
 int main(void)
 {
-    char *str;
+	char *str;
 
-    	str = " awmdio wikxm 1332 okdao!*?)=(";
-	/*printf("La posicion del primer caracter es: %p\n", &str[]); */
+	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
 	print_rev(str);
-    return (0);
+	return (0);
 }
