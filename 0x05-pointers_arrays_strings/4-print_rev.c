@@ -13,7 +13,7 @@ void print_rev(char *s)
 		counter++;
 
 	}
-	while (&s[counter] != &s[0])
+	while (s[counter] != s[0])
 	{
 	_putchar (s[counter]);
 	counter--;
