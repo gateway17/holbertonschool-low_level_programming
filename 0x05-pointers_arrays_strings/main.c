@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  * main - check the code for Holberton School students.
  *
@@ -8,7 +9,7 @@ int main(void)
 {
     char *str;
 
-    str = "Andres felipe Sepulvedai!0";
-    puts2(str);
+    str = "ckan0slñjs";
+    puts_half(str);
     return (0);
 }
