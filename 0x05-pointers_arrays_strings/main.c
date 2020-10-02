@@ -8,7 +8,7 @@ int main(void)
 {
     char *str;
 
-    str = "012345678934abcde";
+    str = "Andres felipe Sepulvedai!0";
     puts2(str);
     return (0);
 }
