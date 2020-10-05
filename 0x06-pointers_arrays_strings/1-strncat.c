@@ -21,7 +21,7 @@ char *_strncat(char *dest, char *src, int n)
 	}
 		for (var2 = 0; var2 <= n; var2++)
 		{
-			var3 = dest[ctr + var2] = src[var2];
+			dest[ctr + var2] = src[var2];
 		}
 		_putchar('\n');
 return (dest);
