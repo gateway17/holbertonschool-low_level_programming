@@ -8,22 +8,22 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int ctr, var2, var3;
+	int a = 0;
+	int x = 0;
+	int t;
 
-	ctr = 0;
-	var3 = 'a';
+	while (dest[a] != '\0')
+		a++;
+	while (dest[x] != '\0')
+		x++;
 
-	while (dest[ctr] != '\0')
+	if (n > x)
+		n = x;
+
+	for (t = 0; t < n; t++)
 	{
-		_putchar(dest[ctr]);
-		ctr++;
-
+		dest[a + t] = src[t];
 	}
-		for (var2 = 0; var2 < n; var2++)
-		{
-			var3 = dest[ctr + var2] = src[var2];
-			_putchar(var3);
-		}
-		_putchar('\n');
-return (dest);
+
+	return (dest);
 }
