@@ -19,7 +19,7 @@ char *_strncat(char *dest, char *src, int n)
 		ctr++;
 
 	}
-		for (var2 = 0; var2 <= n; var2++)
+		for (var2 = 0; var2 < n; var2++)
 		{
 			var3 = dest[ctr + var2] = src[var2];
 			_putchar(var3);
