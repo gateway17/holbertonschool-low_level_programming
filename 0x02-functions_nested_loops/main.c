@@ -1,7 +1,11 @@
-#include"holberton.h"
+#include "holberton.h"
 
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	_abs(96);
-return (0);
+	jack_bauer();
 }
