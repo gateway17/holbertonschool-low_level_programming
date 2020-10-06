@@ -1,24 +1,22 @@
 #include "holberton.h"
-#include <stdio.h>
+/**
+ *_memset - print characters n number of times.
+ *@s:array (start point).
+ *@b:Character to print.
+ *@n:Number of times to print @b
+ *Return:The pointer of array.
+ */
 
 char *_memset(char *s, char b, unsigned int n)
 {
 	int ctr;
+	char *m;
 
-	for (ctr = 0;ctr < n;ctr++)
+	for (ctr = 0; ctr < n; ctr++)
 	{
 		s[ctr] = b;
-	putchar(s[ctr]);
+		_putchar(s[ctr]);
 	}
-}
-
-int main(void)
-{
-
-	char buffer[90];
-	char n = 'a';
-
-	_memset(buffer, a, 20);
-
-return(0);
+	m = s;
+return (m);
 }
