@@ -17,3 +17,11 @@ void _puts_recursion(char *s)
 	_puts_recursion(s + ctr);
 
 }
+
+int main(void)
+{
+	char *s = "hola";
+	_puts_recursion(s);
+
+
+}
