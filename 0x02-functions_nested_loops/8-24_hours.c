@@ -1,19 +1,34 @@
-#include "holberton.h"
-
+#include <stdio.h>
+/**
+ *jack_bauer - print the Jack Bauer clock.
+ */
 void jack_bauer(void)
 {
-	int num1, num2;
+	char min2, min1, hr1, hr2;
 
-	for (num1 = 00; num1 <= 23;num1++)
+
+
+	for (hr1 = 48; hr1 < 51; hr1++)
 	{
-		for (num2 = 0;num2 <= 59;num2++)
-		{
-			_putchar(num1 + '0');
-			_putchar(':');
-			_putchar(num2 + '0');
-		}
-	
-	}
 
+	for (hr2 = 48; hr2 < 52; hr2++)
+	{
+
+	for (min1 = 48; min1 < 54; min1++)
+	{
+
+
+	for (min2 = 48; min2 < 58; min2++)
+	{
+		putchar(hr1);
+		putchar(hr2);
+		putchar(':');
+		putchar(min1);
+		putchar(min2);
+		putchar('\n');
+	}
+	}
+	}
+	}
 
 }
