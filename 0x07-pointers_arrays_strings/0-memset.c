@@ -11,14 +11,11 @@ char *_memset(char *s, char b, unsigned int n)
 	putchar(s[ctr]);
 	}
 }
-
 int main(void)
 {
+	    char buffer[98] = {0x00};
 
-	char buffer[90];
-	char n = 'a';
-
-	_memset(buffer, a, 20);
-
-return(0);
+	_memset(buffer, 0x2, 95);
+	printf("-------------------------------------------------\n");   
+	return (0);
 }
