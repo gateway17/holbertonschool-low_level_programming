@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
  * main - check the code for Holberton School students.
  *
@@ -7,6 +7,9 @@
  */
 int main(void)
 {
-    jack_bauer();
+	int n;
+
+	n = add(20, 35);
+	printf("%d\n", n);
     return (0);
 }
