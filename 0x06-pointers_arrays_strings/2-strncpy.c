@@ -1,47 +1,37 @@
 #include "holberton.h"
 #include <stdio.h>
+/**
+ * _strncpy - copy n bytes of a string
+ *
+ * @dest: The addres of the copy
+ * @src: The address of the original
+ * @n: number of bytes to be copied
+ *
+ * Return: The address of the concatenated char
+ */
 
 char *_strncpy(char *dest, char *src, int n)
 {
+	int i, lenghtOriginal, aux;
 
+	for (lenghtOriginal = 0; *(src + lenghtOriginal); lenghtOriginal++)
+		;
 
+	if (lenghtOriginal >= n)
+	{
+		for (i = 0; i < n; i++)
+			*(dest + i) = *(src + i);
+	}
+	else
+	{
+		for (i = 0; i < lenghtOriginal; i++)
+			*(dest + i) = *(src + i);
 
+		aux = i;
 
+		for (i = aux; i < n; i++)
+			*(dest + i) = 0;
 
+	}
+	return (dest);
 }
-
-
-int main(void)
-{
-    char s1[98];
-    char *p;
-    int i;
-
-    for (i = 0; i < 98 - 1; i++)
-    {
-        s1[i] = '*';
-    }
-    s1[i] = '\0';
-    printf("%s\n", s1);
-/*    p = _strncpy(s1, "First, solve the problem. Then, write the code\n", 5);
-    printf("%s\n", s1);
-    printf("%s\n", p);
-    p = _strncpy(s1, "First, solve the problem. Then, write the code\n", 90);
-    printf("%s", s1);
-    printf("%s", p);
-    for (i = 0; i < 98; i++)
-    {
-        if (i % 10)
-        {
-            printf(" ");
-        }
-        if (!(i % 10) && i)
-        {
-            printf("\n");
-        }
-        printf("0x%02x", s1[i]);
-    }
-    printf("\n");
-    return (0); */
-}
-

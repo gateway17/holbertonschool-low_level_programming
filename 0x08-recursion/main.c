@@ -7,5 +7,6 @@
  */
 int main(void)
 {
-	jack_bauer();
+    _print_rev_recursion("\nThey are cunts!!+");
+    return (0);
 }
