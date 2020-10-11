@@ -7,9 +7,8 @@
  */
 int main(void)
 {
-	int n;
 
-	n = add(20, 35);
-	printf("%d\n", n);
+	print_to_98(-20);
+	print_to_98(120);
     return (0);
 }
