@@ -17,7 +17,7 @@ int main(int __attribute__((__unused__)) argc, char **argv)
 	}
 	else
 	{
-		printf("Error.\n");
+		printf("Error\n");
 		return (1);
 	}
 }
