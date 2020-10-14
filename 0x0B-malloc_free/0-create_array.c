@@ -1,20 +1,23 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+/**
+ *create_array - Creates an array.
+ *@size:reserve size in memory for the array.
+ *@c:First character for the array.
+ *Return: Return the pointer of the array.
+ */
 char *create_array(unsigned int size, char c)
 {
-	char array[size];
-	char *ptr;
+
+	char *array;
 
 	if (size == 0)
 	{
-		return(NULL);
+		return (NULL);
 
 	}
+	array = malloc(size);
 	array[0] = c;
-	ptr = array;
-	return(ptr);
-
-
-
-
+	printf("%s\n", array);
+	return (array);
 }
