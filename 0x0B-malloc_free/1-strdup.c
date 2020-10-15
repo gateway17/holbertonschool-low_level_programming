@@ -13,6 +13,10 @@ char *_strdup(char *str)
 	int ctr2 = 0;
 	char *p;
 
+	if (str == NULL)
+	{
+		return(NULL);
+	}
 
 
 	while (*(str + ctr) != '\0')
