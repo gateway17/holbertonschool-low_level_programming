@@ -21,3 +21,9 @@ char *create_array(unsigned int size, char c)
 	return (array);
 	free(array);
 }
+
+int main(void)
+{
+	create_array(50, 'H');
+	return(0);
+}
