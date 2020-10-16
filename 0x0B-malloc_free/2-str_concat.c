@@ -11,11 +11,15 @@ char *str_concat(char *s1, char *s2)
 {
 
 	int ctr1, ctr2, c;
-	char *p;
+	char *p = NULL;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)	
 	{
 		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
 	}
 
 	for (ctr1 = 0; *(s1 + ctr1) != '\0'; ctr1++)
