@@ -13,6 +13,10 @@ char *str_concat(char *s1, char *s2)
 	int ctr1, ctr2, c;
 	char *p;
 
+	if (s1 == NULL || s2 == NULL)
+	{
+		return(NULL);
+	}
 
 	for (ctr1 = 0; *(s1 + ctr1) != '\0'; ctr1++)
 		;
@@ -34,5 +38,4 @@ char *str_concat(char *s1, char *s2)
 	}
 	*(p + ctr1) = '\0';
 	return (p);
-
 }
