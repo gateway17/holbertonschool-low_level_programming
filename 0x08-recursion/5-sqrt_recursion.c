@@ -2,6 +2,7 @@
 /**
  *_sqrt_recursion - calls function
  *@n: Number to get the squere root
+ *@num1: Multiplier.
  *Return: The root of that number.
  */
 
