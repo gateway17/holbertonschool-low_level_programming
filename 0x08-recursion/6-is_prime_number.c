@@ -4,6 +4,8 @@
  *@n: number top know if it's prime.
  *Return: "1" if it's prime, else "0".
  */
+int function(int n, int dvr);
+
 int is_prime_number(int n)
 {
 
