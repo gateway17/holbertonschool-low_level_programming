@@ -14,3 +14,8 @@ struct dog
 };
 
 #endif
+#ifndef __NEW_VAR_DOG__
+#define __NEW_VAR_DOG__
+void init_dog(struct dog *d, char *name, float age, char *owner);
+
+#endif
