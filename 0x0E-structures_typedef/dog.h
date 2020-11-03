@@ -13,16 +13,12 @@ typedef struct dog
 	char *owner;
 } dog_t;
 
-#endif
 
-#ifndef __NEW_VAR_DOG__
-#define __NEW_VAR_DOG__
+
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
-#endif
-
-#ifndef __PRINT_DATA__
-#define __PRINT_DATA__
 void print_dog(struct dog *d);
+
+dog_t *new_dog(char *name, float age, char *owner);
 
 #endif
