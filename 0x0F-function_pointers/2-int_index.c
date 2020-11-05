@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "function_pointers.h"
 /**
  * int_index - call another function to compare two numbers.
@@ -25,5 +24,5 @@ int i;
 	}
 
 	}
-
+return (-1);
 }
