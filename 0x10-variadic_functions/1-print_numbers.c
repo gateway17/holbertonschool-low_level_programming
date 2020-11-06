@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 /**
  * print_numbers - prints a sequence of integers.
- * @separator: text betweeb numbers.
+ * @separator: text between numbers.
  * @n: List of integers.
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -11,6 +11,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list(list);
 	va_start(list, n);
 
+	if (n == 0)
+	{
+		return;
+	}
 
 	for (ctr = 0; ctr < n - 1 ; ctr++)
 	{
