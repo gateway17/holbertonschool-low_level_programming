@@ -1,5 +1,5 @@
 #!/bin/bash 
-git add $PWD/0x0B-malloc_free/* &&
+git add $PWD//* &&
 git status &&
 git commit -m "Done." &&
 git push origin master
