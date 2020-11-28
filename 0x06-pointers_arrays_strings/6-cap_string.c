@@ -1,15 +1,19 @@
 #include <stdio.h>
-
+/**
+ *cap_string - capitalizes all words of a string.
+ *@s: Pointer of the string.
+ *Return: pointer of the string (s).
+ */
 char *cap_string(char *s)
 {
 	int ctr;
 
 
-	for(ctr = 0; s[ctr] != '\0'; ctr++)
+	for (ctr = 0; s[ctr] != '\0'; ctr++)
 	{
 	if (s[ctr - 1] == 32)
 	{
-		if (s[ctr] < 91 && s[ctr] > 64)
+		if (s[ctr] > 96 && s[ctr] < 123)
 		{
 			s[ctr] = (s[ctr] - 32);
 
@@ -17,16 +21,5 @@ char *cap_string(char *s)
 
 	}
 	}
-return(s);
-}
-
-int main(void)
-{
-    char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
-    char *p;
-
-    p = cap_string(s);
-    printf("%s", p);
-    printf("%s", s);
-    return (0);
+return (s);
 }
