@@ -7,8 +7,10 @@
  */
 void reverse_array(int *a, int n)
 {
-	n--;
-	int ctr2 = 0, ctr1 = n, b = 0;
+
+	int ctr2 = 0;
+	int b = 0;
+	int ctr1 = --n;
 
 	for (; ctr1 >= ctr2; ctr1--)
 	{
