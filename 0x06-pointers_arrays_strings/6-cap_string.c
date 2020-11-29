@@ -6,20 +6,20 @@
  */
 char *cap_string(char *s)
 {
-	int ctr;
-
+	int ctr, ctr2;
+	char array[] = " \t\n,;.!?\"(){}";
 
 	for (ctr = 0; s[ctr] != '\0'; ctr++)
 	{
-	if (s[ctr - 1] == 32)
-	{
-		if (s[ctr] > 96 && s[ctr] < 123)
+		for (ctr2 = 0; array[ctr2] != '\0'; ctr2++)
 		{
-			s[ctr] = (s[ctr] - 32);
-
+			if (s[ctr] == array[ctr2] && s[ctr + 1] > 96 && s[ctr + 1] < 123)
+			{
+				s[ctr + 1] = s[ctr + 1] - 32;
+			}
 		}
 
-	}
+
 	}
 return (s);
 }
