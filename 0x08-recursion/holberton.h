@@ -15,5 +15,7 @@ int is_palindrome(char *s);
 int function(int ctr, char *s, int size);
 int _strlen(char *s);
 int wildcmp(char *s1, char *s2);
+int look_wildcmp(char *s1, char *s2);
+int look_other(char *s1, char *s2, int i);
 
 #endif
