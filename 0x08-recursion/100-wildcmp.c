@@ -68,6 +68,6 @@ int look_other(char *s1, char *s2, int i)
 		return (look_wildcmp(s1, s2));
 	if (*s1 != *(s1 - i))
 		look_other(s1 + 1, s2, i + 1);
-	return (look_wildcmp(s1,s2));
+	return (look_wildcmp(s1, s2));
 
 }
