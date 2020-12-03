@@ -1,0 +1,1 @@
+More simple linked list.
