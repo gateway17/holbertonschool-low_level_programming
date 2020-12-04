@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "holberton.h"
+
 /**
  *reverse_array - Reverse de values of an array.
  *@a: Array.
