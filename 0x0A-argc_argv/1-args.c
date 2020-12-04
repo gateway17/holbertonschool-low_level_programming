@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
  *main - Print how many parameters has the main program.
  *@argc:Count how many arguments does the main program has.

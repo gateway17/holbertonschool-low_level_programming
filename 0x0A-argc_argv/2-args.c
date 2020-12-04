@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
  *main - Print each parameters.
  *@argc:counts the mount of parameters.

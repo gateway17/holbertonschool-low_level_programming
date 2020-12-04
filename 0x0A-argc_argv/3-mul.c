@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "holberton.h"
+
 /**
  *main - make a multiplication with the parameters after the main program.
  *@argc: NO USED,

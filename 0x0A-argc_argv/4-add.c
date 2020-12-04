@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "holberton.h"
+
 /**
  * main - Sums positive numbers
  *
