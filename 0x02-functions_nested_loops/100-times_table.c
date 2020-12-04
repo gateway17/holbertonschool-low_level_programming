@@ -1,106 +1,59 @@
 #include "holberton.h"
 
 /**
- * print_times_table - print times table
- * @n: the number for the times table
+ * print_times_table - Prints the times table
  *
- * Description: prints times table of any given number
- * Return: void
+ * @n: The table to be printed
+ * Return: Void
  */
+
 void print_times_table(int n)
 {
-	int l, b;
-	int e = 0;
+	int i, j, nm;
 
-	if (!(n > 15 || n < 0))
+	if (n < 0 || n > 15)
 	{
-		for (l = 0; l < n + 1; l++)
+		return;
+	}
+	else
+	{
+		for (i = 0; i <= n; i++)
 		{
-			for (b = 0; b < n + 1; b++)
+			for (j = 0; j <= n; j++)
 			{
-				check(&b, &e, &n);
+				nm = i * j;
+				if (nm < 10)
+				{
+					_putchar(nm + 48);
+				}
+				else if (nm < 100)
+				{
+					_putchar((nm / 10) + 48);
+					_putchar((nm % 10) + 48);
+				}
+				else
+				{
+					_putchar((nm / 100) + 48);
+					_putchar(((nm / 10) % 10) + 48);
+					_putchar((nm % 10) + 48);
+				}
+
+				if (j != n)
+				{
+					_putchar(44);
+					_putchar(32);
+				}
+				if ((i * (j + 1)) < 10 && (j != n))
+				{
+					_putchar(32);
+					_putchar(32);
+				}
+				else if ((i * (j + 1)) < 100 && (j != n))
+				{
+					_putchar(32);
+				}
 			}
-			_putchar('\n');
-			e++;
+			_putchar(10);
 		}
 	}
-}
-
-/**
- * check - check condition of table
- * @b: base number
- * @e: exponente
- * @n: given number
- *
- * Return: void
- */
-void check(int *b, int *e, int *n)
-{
-	int r, fd, md, ld;
-
-	r = *b * *e;
-	if (r == 0 && *b == 0)
-		_putchar(r + '0');
-	else
-		_putchar(' ');
-	if (r < 10 && *b != 0)
-	{
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(r + '0');
-	}
-	else if (r > 9 && r < 100 && *b != 0)
-	{
-		fd = firstDigit(r);
-		ld = lastDigit(r);
-		_putchar(' ');
-		_putchar(fd + '0');
-		_putchar(ld + '0');
-	}
-	else if (r > 99)
-	{
-		fd = firstDigit(r);
-		md = middleDigit(r);
-		ld = lastDigit(r);
-		_putchar(fd + '0');
-		_putchar(md + '0');
-		_putchar(ld + '0');
-	}
-	if (*b != *n)
-		_putchar(',');
-}
-
-/**
- * firstDigit - return first digit of a number
- * @n: number to evaluate
- *
- * Return: first digit
- */
-int firstDigit(int n)
-{
-	while (n >= 10)
-		n /= 10;
-	return (n);
-}
-
-/**
- * middleDigit - return middle digit of a number
- * @n: number to evaluate
- *
- * Return: middle digit
- */
-int middleDigit(int n)
-{
-	return ((n / 10) % 10);
-}
-
-/**
- * lastDigit - return last digit of a number
- * @n: number to evaluate
- *
- * Return: last digit
- */
-int lastDigit(int n)
-{
-	return (n % 10);
 }
