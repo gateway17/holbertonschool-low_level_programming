@@ -7,25 +7,12 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int buffer, ctr, ctr2, buffer2;
-	char *p;
+	unsigned long int hold;
 
-	for (buffer = n, ctr = 0; (buffer >>= 1) > 0; ctr++)
-		;
-	buffer2 = ctr;
-	p = (char *)malloc(sizeof(char) * ctr);
+	if (index > 64)
+		return (-1);
 
-	for (ctr2 = 0; ctr > 0; ctr2++, ctr--)
-	if ((n >> ctr) & 1)
-		p[ctr2] = '1';
-	else
-		p[ctr2] = '0';
+	hold = n >> index;
 
-	buffer2 = buffer2 - index;
-
-	if (p[buffer2] == '1')
-		return (1);
-	else
-		return (0);
-
+	return (hold & 1);
 }
