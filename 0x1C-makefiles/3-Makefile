@@ -1,0 +1,21 @@
+
+CC = gcc
+SRC = main.c holberton.c
+OBJ = $(SRC:.c=.o)
+NAME = holberton
+RM = rm -r
+
+
+all: $(OBJ) # Compiles object files
+	$(CC) $(OBJ) -o $(NAME)
+
+clean: # Delates temporal files
+	$(RM) *~ $(NAME)
+
+oclean: # Delate object files
+	$(RM) $(OBJ) $(NAME)
+
+fclean: oclean clean # We dont have to write recipe because we "Inherit" from clean and oclena
+
+re: fclean all # Cleans and compile again
+
