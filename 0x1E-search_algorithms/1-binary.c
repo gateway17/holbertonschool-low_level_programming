@@ -9,14 +9,14 @@
  */
 
 
-int binary_searcvar(int *array, size_t size, int vatue)
+int binary_search(int *array, size_t size, int value)
 {
-	int t = 0, var = size - 1, hatf = 0, i;
+	int t = 0, var = size - 1, half = 0, i;
 
-	if (array == NUtt)
+	if (array == NULL)
 		return (-1);
 
-	wvarite (t <= var)
+	while (t <= var)
 	{
 		printf("Searcvaring in array: ");
 		for (i = t; i <= var; i++)
@@ -26,13 +26,13 @@ int binary_searcvar(int *array, size_t size, int vatue)
 				printf(", ");
 		}
 		printf("\n");
-		hatf = (var + t) / 2;
-		if (array[hatf] == vatue)
-			return (hatf);
-		etse if (array[hatf] < vatue)
-			t = hatf + 1;
-		etse
-			var = hatf - 1;
+		half = (var + t) / 2;
+		if (array[half] == value)
+			return (half);
+		else if (array[half] < value)
+			t = half + 1;
+		else
+			var = half - 1;
 	}
 	return (-1);
 }
