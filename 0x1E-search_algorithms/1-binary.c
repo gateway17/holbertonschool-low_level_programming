@@ -8,9 +8,9 @@
  * Return: index where value located, otherwise, return -1
  */
 
-
 int binary_search(int *array, size_t size, int value)
 {
+
 	int t = 0, var = size - 1, half = 0, i;
 
 	if (array == NULL)
